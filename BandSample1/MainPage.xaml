@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="BandSample1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BandSample1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF4671D5" Margin="0,0,-300,-278" Height="710" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="505*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btSearchBand" Content="SearchBand" HorizontalAlignment="Left" Margin="218,63,0,0" VerticalAlignment="Top" Background="#9906266F" Foreground="White" Width="150" Height="126" Click="btSearchBand_Click" Grid.Column="1"/>
+        <Button x:Name="btReadVersion" Content="ReadVersion" HorizontalAlignment="Left" Margin="373,63,0,0" VerticalAlignment="Top" Background="#991240AB" Foreground="White" Width="150" Height="126" Grid.Column="1" Click="btReadVersion_Click"/>
+        <Button x:Name="button_Copy1" Content="ReadBattery" HorizontalAlignment="Left" Margin="528,63,0,0" VerticalAlignment="Top" Background="#991240AB" Foreground="White" Width="150" Click="button_Copy1_Click" Height="126" Grid.Column="1"/>
+        <Button x:Name="btLinkTheBand" Content="LinkTheBand" HorizontalAlignment="Left" Margin="0,102,0,0" VerticalAlignment="Top" Background="#991240AB" Foreground="White" Width="213" Height="87" Click="btLinkTheBand_Click" Grid.Column="1"/>
+        <ComboBox x:Name="cbBandName" HorizontalAlignment="Left" Margin="0,63,0,0" VerticalAlignment="Top" Height="34" Grid.Column="1" Width="213"/>
+        <TextBlock x:Name="tbLinkModel" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Wait for Linking." VerticalAlignment="Top" Width="213" Foreground="White" Height="20" Grid.Column="1"/>
+        <Button x:Name="btTest" Content="Test" Grid.Column="1" HorizontalAlignment="Left" Margin="0,194,0,0" VerticalAlignment="Top" Foreground="White" Width="104" Height="51" Click="btTest_Click"/>
+        <Rectangle Grid.Column="1" Fill="#7F062672" HorizontalAlignment="Left" Height="114" Margin="373,194,0,0" VerticalAlignment="Top" Width="305"/>
+        <TextBlock x:Name="tbVersion" HorizontalAlignment="Left" Margin="380,212,0,0" TextWrapping="Wrap" Text="Version:" VerticalAlignment="Top" Foreground="White" Height="20" Width="298" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
+        <TextBlock x:Name="tbBatteryInfo" Grid.Column="1" HorizontalAlignment="Left" Margin="391,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="White" Height="20" Width="0"/>
+        <TextBlock x:Name="tbBandUser" Grid.Column="1" HorizontalAlignment="Left" Margin="391,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Foreground="White" Height="20" Width="0"/>
+        <Rectangle Grid.Column="1" Fill="#99062672" HorizontalAlignment="Left" Height="245" Margin="683,63,0,0" VerticalAlignment="Top" Width="268"/>
+        <Button x:Name="btSendTile" Content="SendNewTile" Grid.Column="1" HorizontalAlignment="Left" Margin="825,182,0,0" VerticalAlignment="Top" Height="114" Width="110" Background="#CC4264B6" Foreground="White" Click="btSendTile_Click"/>
+        <TextBox x:Name="tbTileName" Grid.Column="1" HorizontalAlignment="Left" Margin="794,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" Foreground="White" Height="32"/>
+        <TextBox x:Name="textBox1" Grid.Column="1" HorizontalAlignment="Left" Margin="794,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" Foreground="White" Height="32"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="719,84,0,0" TextWrapping="Wrap" Text="TileName:" VerticalAlignment="Top" Foreground="#FFFFEBEB" Height="20" Width="66"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Left" Margin="719,121,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFFFEBEB" Height="20" Width="62"/>
+        <Button x:Name="btGetTileMessage" Content="GetTileMessage" Grid.Column="1" HorizontalAlignment="Left" Margin="683,313,0,0" VerticalAlignment="Top" Height="58" Width="268" Foreground="WhiteSmoke" Click="btGetTileMessage_Click"/>
+        <TextBlock x:Name="textBlock2" Grid.Column="1" HorizontalAlignment="Left" Margin="464,253,0,0" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" Width="287" Foreground="#33AEAEAE" FontSize="40" Height="53"/>
+        <Rectangle Grid.Column="1" Fill="#991240AB" HorizontalAlignment="Left" Height="233" Margin="373,313,0,0" VerticalAlignment="Top" Width="305"/>
+        <Button x:Name="btSendMessage" Content="Send Message to Band" Grid.Column="1" HorizontalAlignment="Left" Margin="373,467,0,0" VerticalAlignment="Top" Foreground="White" Width="305" Height="55" Click="btSendMessage_Click"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="391,344,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Foreground="#FFF0F0F0"/>
+        <TextBox x:Name="textBox_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="391,406,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268" Foreground="#FFF0F0F0"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="1" HorizontalAlignment="Left" Margin="391,319,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Foreground="#FFF0F0F0"/>
+        <TextBlock x:Name="textBlock4" Grid.Column="1" HorizontalAlignment="Left" Margin="391,381,0,0" TextWrapping="Wrap" Text="Body" VerticalAlignment="Top" Foreground="#FFF0F0F0"/>
+        <TextBlock x:Name="tbAcce" Grid.Column="1" HorizontalAlignment="Left" Margin="109,196,0,0" TextWrapping="Wrap" Text="Acce:" VerticalAlignment="Top" Width="140" Foreground="#FFF3EBEB"/>
+
+    </Grid>
+</Page>
